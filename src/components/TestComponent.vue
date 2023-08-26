@@ -22,6 +22,6 @@ function increment() {
 
 const state = ref(false)
 function updateState() {
-    state.value = false
+    state.value = !state.value
 }
 </script>

@@ -32,6 +32,6 @@ describe('TestComponent', () => {
     const button = await screen.findByTestId('conditionalBtn') 
     await fireEvent.click(button)
     const element = await screen.findByTestId('conditional') 
-    expect(element).toBeTruthy()
+    expect(element.innerHTML.trim()).toBe('Conditional element')
   })
 })
