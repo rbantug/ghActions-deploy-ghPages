@@ -9,6 +9,7 @@
             <div v-if="state" data-testid="conditional">Conditional element</div>
             <button data-testid="conditionalBtn" @click="updateState">Show element</button>
         </div>
+        <div>Something!</div>
     </div>
 </template>
 
