@@ -7,7 +7,7 @@
         </div>
         <div>
             <div v-if="state" data-testid="conditional">Conditional element</div>
-            <button data-testid="conditionalBtn" @click="updateState">Show element</button>
+            <button data-testid="conditionalBtn" @click="updateState">Change state</button>
         </div>
     </div>
 </template>
