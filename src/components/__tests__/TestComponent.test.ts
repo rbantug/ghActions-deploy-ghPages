@@ -27,4 +27,11 @@ describe('TestComponent', () => {
     const element = await screen.findByTestId('count')
     expect(element.innerHTML.trim()).toBe('Count: 3')
   })
+
+  test('check if element with v-if was rendered', async () => {
+    const button = await screen.findByTestId('conditionalBtn') 
+    await fireEvent.click(button)
+    const element = await screen.findByTestId('conditional') 
+    expect(element.innerHTML.trim()).toBe('Conditional element')
+  })
 })
