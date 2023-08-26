@@ -6,7 +6,7 @@
             <button data-testid="btnIncrement" @click="increment">Click me!</button>
         </div>
         <div>
-            <div v-if="state" data-testid="conditional">I'm part of the DOM</div>
+            <div v-if="state" data-testid="conditional">Conditional element</div>
             <button data-testid="conditionalBtn" @click="updateState">Show element</button>
         </div>
     </div>
